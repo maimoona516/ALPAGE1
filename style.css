@@ -1525,7 +1525,7 @@ left: -2.2rem;
     #main {
         margin-top: 18rem;
     }
-    .logo2 {margin-left: -62px !important;}
+    .logo2 {margin-left: -76px !important;}
 }
 
 
@@ -1603,7 +1603,7 @@ left: -2.2rem;
         top: 3rem;
     }
   }
-
+ 
   @media only screen and (max-width: 350px) {
     .nd__container {
         display: grid;
@@ -1613,7 +1613,7 @@ left: -2.2rem;
         margin-bottom: 12rem;
       
     }
-
+.logo2 {margin-left: -30px !important;}
     .cart-product-three {
         position: relative;
         left: 0.1rem;
@@ -1642,6 +1642,7 @@ left: -2.2rem;
         left: 0.1rem;
         top: 3rem;
     }
+   
 
     .card-nested-img img {
         width: 97%;
@@ -1652,6 +1653,9 @@ left: -2.2rem;
          text-align: center;
      }
   }
+  @media only screen and (max-width: 380px) {.logo2 {margin-left: -35px !important;}}
+
+
 
 
   /* ==================== CHANGESS 1ST SECIONNN ENDDDDDDDDDDDDDDDDDDD ======================  */
