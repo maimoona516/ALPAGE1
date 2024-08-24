@@ -804,11 +804,35 @@ span {
 .today_deals_container h1 {
     padding: 23px;
 }
+@media only screen and (max-width:550px) {.today-deals-product-container {position: relative;
+overflow-x: scroll;
+}
+.today_deals_container {margin-top: 130px;}}
 
+@media only screen and (max-width:1024px )  {
+    .today-deals-product-container {overflow: scroll;
+    overflow-y: hidden !important;}
+    .today_deals_container{margin-top: 110px;
+    margin-bottom: -100px;
+}
+
+.foot-panel1 {margin-top: -290px !important;}
+.nd__container{margin-top: 60px;}
+.card-1 {margin-top: 120px !important;}
+}
+@media only screen and (max-width :722px )  {
+    .today-deals-product-container {overflow: scroll !important;}
+   
+    .card-1 {margin-top: -200px !important;
+    }
+    .logo2 {margin-left: -230px !important;}
+}
 @media (max-width: 768px) {
     .today-deals-product-container {
         position: relative;
-        overflow-y: scroll;
+        overflow-y: scroll !important;
+      
+       
     }
 
     .today-deal-btn-container {
@@ -1252,7 +1276,8 @@ tr {
 
 
 }
-@media (max-width: 1250px){.today-deals-product-container {overflow: scroll;}
+@media (max-width: 1250px){.today-deals-product-container {overflow: scroll;
+overflow-y: hidden;}
 .today_deals_container-two {display: none;
 }}
 
@@ -1310,7 +1335,10 @@ tr {
         display: block;
         margin: 5px 0;
     }
+  
 }
+
+
 
 /* Medium Devices (769px to 1024px) */
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -1319,7 +1347,7 @@ tr {
     }
 
     .foot-panel2 {
-        display: block;
+        display: none;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -1331,7 +1359,8 @@ overflow: scroll;}
         width: 45%;
         margin: 10px 0;
     }
-   .none {display: none;}
+   .none {display: none;
+}
 
     .footer-panel4 {
         display: none;
@@ -1442,6 +1471,7 @@ overflow: scroll;}
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
+    
 
 }
 
@@ -1459,7 +1489,7 @@ overflow: scroll;}
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
     transform: translateX(1.6rem);
-    margin-bottom: 6rem;
+    margin-bottom: -0.98rem;
  
 }
 
@@ -1537,7 +1567,7 @@ left: -2.2rem;
         transform: translateX(1.1rem);
 
     }
-   .card-1 {margin-top: -200px;}
+   .card-1 {margin-top: -40px;}
    
     .cart-product-three {
         position: relative;
