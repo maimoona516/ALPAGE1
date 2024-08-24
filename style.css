@@ -812,12 +812,14 @@ overflow-x: scroll;
 @media only screen and (max-width:1024px )  {
     .today-deals-product-container {overflow: scroll;
     overflow-y: hidden !important;}
-    .today_deals_container{margin-top: 110px;
-    margin-bottom: -100px;
+    .today_deals_container{margin-top: 120px;
+    margin-bottom: -110px;
 }
 
 .foot-panel1 {margin-top: -290px !important;}
-.nd__container{margin-top: 60px;}
+.nd__container{margin-top: 100px;
+margin-bottom: -10px !important;}
+
 .card-1 {margin-top: 120px !important;}
 }
 @media only screen and (max-width :722px )  {
@@ -868,6 +870,7 @@ overflow-x: scroll;
         /* Full width images on very small screens */
     }
 }
+
 
 /*==================================================================frame===================================================*/
 #rhf .rhf-frame {
@@ -1337,8 +1340,23 @@ overflow-y: hidden;}
     }
   
 }
+@media (min-width: 772px) and (max-width: 887px) {    .foot-panel2 { 
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+.foot-panel2 ul {padding-left: 20px;
+    padding-right: 100px;
+margin: 10px 0;
+}
 
-
+}
+@media (min-width: 770px) and (max-width: 887px) {.card-4 {display: none;}}
+@media (min-width: 520px) and (max-width: 945px) {.card-2 {margin-top: -190px !important;
+}
+.card-3 {margin-top: -100px !important;}}
 
 /* Medium Devices (769px to 1024px) */
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -1347,19 +1365,18 @@ overflow-y: hidden;}
     }
 
     .foot-panel2 {
-        display: none;
+        display: block;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
     }
+    .foot-panel2 ul {padding-left: 60px;
+        padding-right: 60px;
+}
+.none {display: none;}
 .today-deals-product-container {position: relative;
 overflow: scroll;}
-    .foot-panel2 ul {
-     
-        width: 45%;
-        margin: 10px 0;
-    }
-   .none {display: none;
+ 
 }
 
     .footer-panel4 {
@@ -1371,7 +1388,7 @@ overflow: scroll;}
         display: none;
         margin-bottom: 10px;
     }
-}
+
 
 /* Large Devices (1025px and above) */
 @media (min-width: 1025px) {
