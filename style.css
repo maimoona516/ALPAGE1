@@ -18,6 +18,61 @@ body {
     overflow-x: hidden;
 }
 
+.toggle-menus {
+    display: none;
+}
+
+.menu-icons {
+    font-size: 24px;
+    cursor: pointer;
+    padding: 16px;
+
+    color: white;
+    display: inline-block;
+}
+
+.sidenavs {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:white !important;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenavs a {
+    padding: 8px 14px 23px 28px;
+    text-decoration: none;
+    font-size: 13px;
+    color: #111;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenavs a:hover {
+    color: #f1f1f1;
+}
+
+.sidenavs .closebtns {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    cursor: pointer;
+    padding-top: 30px;
+}
+
+
+
+
+
+
+
 .toggle-menu {
     display: none;
 }
@@ -38,17 +93,17 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color:white !important;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
 }
 
 .sidenav a {
-    padding: 8px 8px 8px 32px;
+    padding: 8px 14px 23px 28px;
     text-decoration: none;
-    font-size: 18px;
-    color: #818181;
+    font-size: 13px;
+    color: #111;
     display: block;
     transition: 0.3s;
 }
@@ -64,22 +119,41 @@ body {
     font-size: 36px;
     margin-left: 50px;
     cursor: pointer;
+    padding-top: 30px;
 }
 
 .hello-signin {
     color: white;
     font-size: 20px;
     padding-left: 32px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    background-color: #232f3e;
+    height: 50px;
+    align-items: center;
+    margin-top: -20px;
+ 
 }
+ .heloo {padding-top: 30px;}
 
-h3 {
+ .hello-signins {
     color: white;
+    font-size: 20px;
+    padding-left: 32px;
+    margin-bottom: 10px;
+    background-color: #232f3e;
+    height: 50px;
+    align-items: center;
+    margin-top: -20px;
+ 
+}
+ .heloos {padding-top: 30px;}
+h3 {
+    color:#232f3e ;
     padding-left: 32px;
 }
 
 #toggle-menu:checked~.sidenav {
-    width: 250px;
+    width: 300px;
 }
 
 #toggle-menu:checked~.menu-icon {
@@ -91,21 +165,36 @@ h3 {
     display: none;
 }
 
-/* Responsive styling */
-@media (max-width: 1024px) {
-    #toggle-menu:checked~.menu-icon {
-        display: block;
-    }
-
-
-    /* Hidden Checkbox */
-    .toggle-menu {
-        display: none !important;
-    }
+#toggle-menus:checked~.sidenavs {
+    width: 300px;
 }
+
+#toggle-menus:checked~.menu-icons {
+    display: none;
+}
+
+/* Hidden Checkbox */
+.toggle-menus {
+    display: none;
+}
+
 
 /* Sidebar styling */
 .sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -250px;
+    /* Initially hidden */
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 20px;
+}
+/* Sidebar styling */
+.sidenavs {
     height: 100%;
     width: 250px;
     position: fixed;
@@ -129,13 +218,29 @@ h3 {
 }
 
 /* Toggle sidebar when checkbox is checked */
+#toggle-menus:checked~.sidenavs {
+    left: 0;
+    /* Sidebar slides in */
+}
 #toggle-menu:checked~.sidenav {
     left: 0;
     /* Sidebar slides in */
 }
 
+/* Responsive styling 
+@media (min-width: 1250px) and (max-width: 1440px) {
+    .menu-text {
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+        color: #232f3e;
+        padding-left: 20px;
+    }
 
-
+    .fas.fa-bars {
+        margin-right: 10px;
+    }
+} */
 /*================================================header=========================================================================*/
 .navbar {
     height: 70px;
@@ -311,6 +416,7 @@ span {
     width: 100px;
     margin-left: -50px;
     position: relative;
+    justify-content: space-between;
 }
 
 .nav-logo2 {
@@ -369,7 +475,7 @@ span {
     .logo {
         margin-left: -160px;
         height: 6rem;
-        position: relative;
+        
     }
 
     .headr {
@@ -807,7 +913,7 @@ span {
 @media only screen and (max-width:550px) {.today-deals-product-container {position: relative;
 overflow-x: scroll;
 }
-.today_deals_container {margin-top: 130px;}}
+}
 
 @media only screen and (max-width:1024px )  {
     .today-deals-product-container {overflow: scroll;
@@ -1340,6 +1446,17 @@ overflow-y: hidden;}
     }
   
 }
+@media (max-width: 720px) {.logo2 {
+margin-left: -180px !important;}}
+
+
+    @media (max-width: 590px) {.logo2 {position: relative;
+        margin-left: -160px !important;}}
+    @media (max-width: 468px) {.logo2 {position: relative;
+        margin-left: -100px !important;}}
+        @media (max-width: 400px) {.logo2 {position: relative;
+            margin-left: -76px !important;}}
+
 @media (min-width: 772px) and (max-width: 887px) {    .foot-panel2 { 
     display: block;
     display: flex;
@@ -1353,7 +1470,7 @@ margin: 10px 0;
 }
 
 }
-@media (min-width: 770px) and (max-width: 887px) {.card-4 {display: none;}}
+@media (min-width: 770px) and (max-width: 895px) {.card-4 {display: none;}}
 @media (min-width: 520px) and (max-width: 945px) {.card-2 {margin-top: -190px !important;
 }
 .card-3 {margin-top: -100px !important;}}
@@ -1565,14 +1682,14 @@ left: -2.2rem;
     #main {
         margin-top: 15rem;
     }
-    .logo2{margin-left: -250px;}
+    .logo2{margin-left: -230px;}
 }
 
 @media only screen and (max-width: 450px) {
     #main {
         margin-top: 18rem;
     }
-    .logo2 {margin-left: -76px !important;}
+    .logo2 {margin-left: -72px !important;}
 }
 
 
@@ -1584,8 +1701,8 @@ left: -2.2rem;
         transform: translateX(1.1rem);
 
     }
-   .card-1 {margin-top: -40px;}
-   
+   .card-1 {margin-top: -30px;}
+
     .cart-product-three {
         position: relative;
         left: 0.1rem;
@@ -1620,13 +1737,15 @@ left: -2.2rem;
         margin-bottom: 12rem;
         
     }
-.logo2 {margin-left: -79px;}
+.logo2 {margin-left: -100px;}
     .cart-product-three {
         position: relative;
         left: -0.1rem;
         top: 6rem;
     }
-    
+  
+  
+  
     .cart-product-four {
         position: relative;
         left: -0.1rem;
@@ -1660,7 +1779,7 @@ left: -2.2rem;
         margin-bottom: 12rem;
       
     }
-.logo2 {margin-left: -30px !important;}
+.logo2 {margin-left: -40px !important;}
     .cart-product-three {
         position: relative;
         left: 0.1rem;
@@ -1700,9 +1819,12 @@ left: -2.2rem;
          text-align: center;
      }
   }
-  @media only screen and (max-width: 380px) {.logo2 {margin-left: -35px !important;}}
+  @media only screen and (max-width: 390px) {.logo2 {margin-left: -43px !important;}}
+  @media only screen and (max-width: 330px) {.logo2 {margin-left: -25px !important;}}
+
 
 
 
 
   /* ==================== CHANGESS 1ST SECIONNN ENDDDDDDDDDDDDDDDDDDD ======================  */
+  
