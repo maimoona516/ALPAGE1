@@ -417,6 +417,7 @@ span {
     margin-left: -50px;
     position: relative;
     justify-content: space-between;
+    align-items: center;
 }
 
 .nav-logo2 {
@@ -1450,13 +1451,14 @@ overflow-y: hidden;}
 margin-left: -180px !important;}}
 
 
-    @media (max-width: 590px) {.logo2 {position: relative;
-        margin-left: -160px !important;}}
+    @media (min-width: 626px) {.logo2 {position: relative;
+        margin-left: -180px !important;}}
     @media (max-width: 468px) {.logo2 {position: relative;
         margin-left: -100px !important;}}
         @media (max-width: 400px) {.logo2 {position: relative;
             margin-left: -76px !important;}}
-
+            @media only screen and (max-width: 540px) {.logo2 {position: relative;
+                margin-left: -120px !important;}}
 @media (min-width: 772px) and (max-width: 887px) {    .foot-panel2 { 
     display: block;
     display: flex;
