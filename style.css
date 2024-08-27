@@ -1440,7 +1440,7 @@ overflow-y: hidden;}
         text-align: center;
 
     }
-
+.logo2 {margin-left: -249px !important;}
     .pagess a {
         display: block;
         margin: 5px 0;
@@ -1448,11 +1448,12 @@ overflow-y: hidden;}
   
 }
 @media (max-width: 720px) {.logo2 {
-margin-left: -180px !important;}}
+margin-left: -145px !important;}}
 
-
+@media (min-width: 610px) {.logo2 {position: relative;
+transform: translate(20px) !important;}}
     @media (min-width: 626px) {.logo2 {position: relative;
-        margin-left: -180px !important;}}
+        margin-left: -165px !important;}}
     @media (max-width: 468px) {.logo2 {position: relative;
         margin-left: -100px !important;}}
         @media (max-width: 400px) {.logo2 {position: relative;
